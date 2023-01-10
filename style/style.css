@@ -23,3 +23,16 @@
     grid-column: 2/-1;
     grid-row: 2/-1;
 }
+/* Sidebar */
+.logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 10px;
+}
+.logo img {
+    justify-self: end;
+}
+.logo span {
+    justify-self: start;
+}
