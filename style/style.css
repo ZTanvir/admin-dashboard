@@ -1,38 +1,57 @@
 .dashboard-page {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 3fr;
-    height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 3fr;
+  height: 100vh;
 }
 
 .sidebar {
-    background-color: lightblue;
-    grid-column: 1/2;
-    grid-row: 1/-1;
-    border: 1px solid black;
+  background-color: lightblue;
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  border: 1px solid black;
 }
 .header {
-    background-color: white;
-    grid-column: 2/-1;
-    grid-row: 1/2;
-    border: 1px solid black;
+  background-color: white;
+  grid-column: 2/-1;
+  grid-row: 1/2;
+  border: 1px solid black;
 }
 .main-content {
-    background-color: lightgray;
-    border: 1px solid black;
-    grid-column: 2/-1;
-    grid-row: 2/-1;
+  background-color: lightgray;
+  border: 1px solid black;
+  grid-column: 2/-1;
+  grid-row: 2/-1;
 }
 /* Sidebar */
+.sidebar {
+  padding-top: 25px;
+  display: grid;
+  grid-template-rows: 100px 200px 100px;
+}
 .logo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-    gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  place-items: center;
 }
 .logo img {
-    justify-self: end;
+  justify-self: end;
 }
 .logo span {
-    justify-self: start;
+  justify-self: start;
+}
+.sidebar .main-menu > div,
+.sidebar .additional-menu > div {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  place-items: center;
+}
+.sidebar .main-menu > div img,
+.sidebar .additional-menu > div img {
+  justify-self: center;
+}
+
+.sidebar .main-menu > div span,
+.sidebar .additional-menu > div span {
+  justify-self: start;
 }
