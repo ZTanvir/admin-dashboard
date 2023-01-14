@@ -5,6 +5,11 @@
 html {
   font-family: "Roboto", sans-serif;
 }
+/* font awesome */
+.fa-solid {
+  color: var(--color-white);
+}
+
 .dashboard-page {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -46,7 +51,7 @@ html {
 }
 .sidebar .logo img,
 .sidebar .main-menu > div img,
-.sidebar .additional-menu > div img {
+.sidebar .additional-menu > div .fa-solid {
   justify-self: center;
 }
 .sidebar .logo span,
