@@ -50,7 +50,7 @@ html {
   padding-bottom: 15px;
 }
 .sidebar .logo img,
-.sidebar .main-menu > div img,
+.sidebar .main-menu > div .fa-solid,
 .sidebar .additional-menu > div .fa-solid {
   justify-self: center;
 }
@@ -59,4 +59,8 @@ html {
 .sidebar .additional-menu > div span {
   justify-self: start;
   color: var(--color-white, white);
+  font-size: 18px;
+}
+.sidebar .logo span {
+  font-size: 28px;
 }
