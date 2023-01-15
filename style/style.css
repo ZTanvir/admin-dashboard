@@ -6,17 +6,18 @@ html {
   font-family: "Roboto", sans-serif;
 }
 /* font awesome */
-.fa-solid {
+.sidebar .fa-solid {
   color: var(--color-white);
 }
 
+/* Parent div */
 .dashboard-page {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 3fr;
   height: 100vh;
 }
-
+/* Child div */
 .sidebar {
   background-color: var(--color-lightblue, lightskyblue);
   grid-column: 1/2;
@@ -63,4 +64,30 @@ html {
 }
 .sidebar .logo span {
   font-size: 28px;
+}
+/* Header */
+.header {
+  padding: 30px 20px;
+}
+.header .search-bar {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+  place-items: center;
+}
+.header .search-bar img {
+  width: 80%;
+  border-radius: 50%;
+}
+.header input[type="text"] {
+  width: 100%;
+  background-color: #d6d9dc;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #d6d9dc;
+  outline: hidden;
+  font-size: 16px;
+  padding: 0px 15px;
+}
+.header input[type="text"]:focus {
+  outline: none;
 }
