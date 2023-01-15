@@ -75,7 +75,7 @@ html {
   place-items: center;
 }
 .header .search-bar img {
-  width: 80%;
+  max-width: 50%;
   border-radius: 50%;
 }
 .header input[type="text"] {
