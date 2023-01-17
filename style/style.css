@@ -75,8 +75,12 @@ html {
   grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
   place-items: center;
 }
+.header .fa-bell {
+  justify-self: end;
+}
 .header .search-bar .avatar-name {
   font-weight: bolder;
+  justify-self: start;
 }
 .header .search-bar img {
   max-width: 40%;
@@ -87,8 +91,8 @@ html {
 .header input[type="text"] {
   width: 100%;
   background-color: #d6d9dc;
-  height: 30px;
-  border-radius: 10px;
+  height: 40px;
+  border-radius: 30px;
   border: 1px solid #d6d9dc;
   outline: hidden;
   font-size: 16px;
