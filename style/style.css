@@ -112,7 +112,7 @@ html {
   margin-top: 0px;
 }
 .header .profile img {
-  max-width: 40%;
+  max-width: 60%;
   background: var(--color-wheat);
   padding: 5px;
   border-radius: 50%;
@@ -141,14 +141,14 @@ html {
 .project-list .cards {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .project-list .project-card {
   background-color: var(--color-white);
   padding: 30px 20px;
   border-radius: 5px;
   border-left: 10px solid var(--color-wheat);
-  height: 200px;
+  height: 220px;
   display: grid;
 }
 .project-list .project-card h3 {
