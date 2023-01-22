@@ -23,17 +23,14 @@ html {
     background-color: var(--color-lightblue, lightskyblue);
     grid-column: 1/2;
     grid-row: 1/-1;
-    border: 1px solid black;
 }
 .header {
     background-color: white;
     grid-column: 2/-1;
     grid-row: 1/2;
-    border: 1px solid black;
 }
 .main-content {
     background-color: lightgray;
-    border: 1px solid black;
     grid-column: 2/-1;
     grid-row: 2/-1;
 }
@@ -144,7 +141,7 @@ html {
 .project-list .cards {
     display: grid;
     gap: 10px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .project-list .project-card {
     background-color: var(--color-white);
@@ -153,10 +150,11 @@ html {
     border-left: 10px solid var(--color-wheat);
 }
 .project-list .project-card h3 {
-    margin-bottom: 0px;
+    margin-bottom: 5px;
 }
 .project-list .project-card article {
-    margin: 16px 0px;
+    margin-bottom: 30px;
+    font-weight: 300;
 }
 .project-list .project-card .card-option {
     display: grid;
@@ -173,6 +171,9 @@ html {
 }
 .notice-message hr {
     border: 0.5px solid rgba(32, 32, 32, 0.2);
+}
+.notice-tending .notice p {
+    font-weight: 300;
 }
 /* Trending */
 .notice-tending .tending {
@@ -193,4 +194,5 @@ html {
 }
 .notice-tending .tending div p + p {
     margin-top: 0px;
+    font-weight: 300;
 }
