@@ -165,3 +165,11 @@ html {
     gap: 20px;
 }
 /* Content announcemets section */
+.notice-tending .notice {
+    background: white;
+    padding: 20px 25px;
+    border-radius: 5px;
+}
+.notice-message hr {
+    border: 0.5px solid rgba(32, 32, 32, 0.2);
+}
